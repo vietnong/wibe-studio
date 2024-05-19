@@ -52,7 +52,7 @@ const Title = styled(motion.div)`
     display: flex;
     flex-direction: row;
     @media (max-width: 768px) {
-      margin-top: 25px !important;
+      margin-top: 20px !important;
     }
   }
 

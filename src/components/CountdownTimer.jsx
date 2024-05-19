@@ -9,16 +9,25 @@ const TimerContainer = styled.div`
 `;
 
 const TimerBlock = styled.div`
-  margin: 0.5rem;
-  padding: 0.5rem;
+color: #000;
+  margin: 0.2rem;
+  padding: 0.3rem;
   background-color: #f0f0f0;
   border-radius: 5px;
   font-size: 1rem;
-  color: #000;
+  display: flex;
+  flex-direction: column; /* Hiển thị các phần tử theo chiều dọc */
+  align-items: center; /* Căn chỉnh các phần tử theo chiều ngang */
+`;
 
-  @media (max-width: 768px) {
-    // font-size: 0.7rem;
-  }
+const TimeValue = styled.p`
+  font-size: 1rem; /* Điều chỉnh kích thước font của giá trị thời gian */
+  margin: 0; /* Xóa bỏ khoảng cách mặc định */
+`;
+
+const TimeLabel = styled.p`
+  font-size: 1rem; /* Điều chỉnh kích thước font của nhãn thời gian */
+  margin: 0; /* Xóa bỏ khoảng cách mặc định */
 `;
 
 const CountdownTimer = () => {
@@ -52,24 +61,32 @@ const CountdownTimer = () => {
     <TimerContainer>
       {timeLeft.days > 0 && (
         <TimerBlock>
-          {timeLeft.days} {timeLeft.days === 1 ? 'Day' : 'Days'}
+          <TimeValue>{timeLeft.days}</TimeValue>
+          &nbsp;
+          <TimeLabel>Days</TimeLabel>
         </TimerBlock>
       )}
       {timeLeft.hours > 0 && (
         <TimerBlock>
-          {timeLeft.hours} {timeLeft.hours === 1 ? 'Hour' : 'Hours'}
+          <TimeValue>{timeLeft.hours}</TimeValue>
+          &nbsp;
+          <TimeLabel>Hours</TimeLabel>
         </TimerBlock>
       )}
       {timeLeft.minutes > 0 && (
         <TimerBlock>
-          {timeLeft.minutes} {timeLeft.minutes === 1 ? 'Minute' : 'Minutes'}
+          <TimeValue>{timeLeft.minutes}</TimeValue>
+          &nbsp;
+          <TimeLabel>Minutes</TimeLabel>
         </TimerBlock>
       )}
-      {timeLeft.seconds > 0 && (
+      
         <TimerBlock>
-          {timeLeft.seconds} {timeLeft.seconds === 1 ? 'Second' : 'Seconds'}
+          <TimeValue>{timeLeft.seconds}</TimeValue>
+          &nbsp;
+          <TimeLabel>Seconds</TimeLabel>
         </TimerBlock>
-      )}
+      
     </TimerContainer>
   );
 };
