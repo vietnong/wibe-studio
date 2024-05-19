@@ -40,7 +40,7 @@ const Title = styled(motion.div)`
   right: 0;
   bottom: 0;
   z-index: 5;
-  margin-top: 220px;
+  margin-top: 150px;
 
   display: flex;
   flex-direction: column;
@@ -58,7 +58,7 @@ const Title = styled(motion.div)`
 
   h1 {
     font-family: "Kaushan Script";
-    font-size: ${(props) => props.theme.fontBig};
+    font-size: ${(props) => props.theme.fontxxxl};
 
     text-shadow: 1px 1px 1px ${(props) => props.theme.body};
 
