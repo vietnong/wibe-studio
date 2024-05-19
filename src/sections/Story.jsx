@@ -222,10 +222,10 @@ let t1= gsap.timeline();
       </Title>
 
       <Container ref={ScrollingRef}>
-        <Photos img={img1} name="Denim" />
-        <Photos img={img2} name="Cool Dresses" />
-        <Photos img={img3} name="Jackets" />
-        <Photos img={img4} name="T-shirts" />
+        <Photos img={img1} name="1" />
+        <Photos img={img2} name="2" />
+        <Photos img={img3} name="3" />
+        <Photos img={img4} name="4" />
       </Container>
 
       <Text data-scroll data-scroll-speed="-4">
