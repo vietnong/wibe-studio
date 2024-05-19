@@ -115,7 +115,6 @@ const Footer = () => {
 
   const handleScroll = (id) => {
     let elem = document.querySelector(id);
-    // console.log(elem);
     scroll.scrollTo(elem, {
       offset: "-100",
       duration: "2000",
@@ -130,12 +129,12 @@ const Footer = () => {
           width="300"
           height="300"
           src={Logo}
-          alt="Wibe"
+          alt="Long ❤️ Trang's Wedding"
           data-scroll
           data-scroll-speed="2"
         />
         <h3 data-scroll data-scroll-speed="-1">
-          Wibe Studio
+        Long ❤️ Trang's Wedding
         </h3>
       </LogoContainer>
       <FooterComponent
@@ -150,24 +149,14 @@ const Footer = () => {
           <li aria-hidden="true" onClick={() => handleScroll("#home")}>
             home
           </li>
-          <li aria-hidden="true" onClick={() => handleScroll(".about")}>
-            about
+          <li aria-hidden="true" onClick={() => handleScroll(".invite")}>
+            invite
           </li>
-          <li aria-hidden="true" onClick={() => handleScroll("#shop")}>
-            shop
+          <li aria-hidden="true" onClick={() => handleScroll("#collection")}>
+            collection
           </li>
           <li aria-hidden="true" onClick={() => handleScroll(".new-arrival")}>
-            new arrival
-          </li>
-          <li>
-            <a href="https://google.com" target={"_blank"} rel="noreferrer">
-              look book
-            </a>
-          </li>
-          <li>
-            <a href="https://google.com" target={"_blank"} rel="noreferrer">
-              reviews
-            </a>
+            story
           </li>
         </ul>
         <Bottom>
@@ -176,7 +165,7 @@ const Footer = () => {
             data-scroll-speed="2"
             data-scroll-direction="horizontal"
           >
-            &copy; 2022. All Rights Reserved.
+            &copy; 2024.
           </span>
           <span
             data-scroll
@@ -184,13 +173,7 @@ const Footer = () => {
             data-scroll-direction="horizontal"
           >
             Made with &hearts; by{" "}
-            <a
-              href="http://devdreaming.com"
-              target={"_blank"}
-              rel="dofollow noreferrer"
-            >
-              CodeBucks
-            </a>
+            Long
           </span>
         </Bottom>
       </FooterComponent>

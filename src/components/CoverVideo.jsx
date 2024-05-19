@@ -2,7 +2,8 @@ import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
 
-import MainVideo from "../assets/Walking Girl.mp4";
+import MainVideo from "../assets/cover-video.mp4";
+import CountdownTimer from "./CountdownTimer";
 
 const VideoContainer = styled.section`
   width: 100%;
@@ -39,6 +40,7 @@ const Title = styled(motion.div)`
   right: 0;
   bottom: 0;
   z-index: 5;
+  margin-top: 220px;
 
   display: flex;
   flex-direction: column;
@@ -49,6 +51,9 @@ const Title = styled(motion.div)`
   div {
     display: flex;
     flex-direction: row;
+    @media (max-width: 768px) {
+      margin-top: 25px !important;
+    }
   }
 
   h1 {
@@ -60,6 +65,9 @@ const Title = styled(motion.div)`
     @media (max-width: 30em) {
       /* font-size: ${(props) => props.theme.fontxxxl}; */
       font-size: calc(5rem + 8vw);
+    }
+    @media (max-width: 768px) {
+      font-size: calc(2rem + 8vw);
     }
   }
   h2 {
@@ -108,7 +116,7 @@ const CoverVideo = () => {
             data-scroll-delay="0.13"
             data-scroll-speed="4"
           >
-            W
+            L
           </motion.h1>
           <motion.h1
             variants={item}
@@ -116,7 +124,7 @@ const CoverVideo = () => {
             data-scroll-delay="0.09"
             data-scroll-speed="4"
           >
-            i
+            o
           </motion.h1>
           <motion.h1
             variants={item}
@@ -124,7 +132,7 @@ const CoverVideo = () => {
             data-scroll-delay="0.06"
             data-scroll-speed="4"
           >
-            b
+            n
           </motion.h1>
           <motion.h1
             variants={item}
@@ -132,9 +140,61 @@ const CoverVideo = () => {
             data-scroll-delay="0.04"
             data-scroll-speed="4"
           >
-            e
+            g
           </motion.h1>
+          
+          <motion.h1
+            variants={item}
+            data-scroll
+            data-scroll-delay="0.04"
+            data-scroll-speed="4"
+          >
+            &nbsp;❤️
+          </motion.h1>
+
+          <motion.h1
+            variants={item}
+            data-scroll
+            data-scroll-delay="0.13"
+            data-scroll-speed="4"
+          >
+            T
+          </motion.h1>
+          <motion.h1
+            variants={item}
+            data-scroll
+            data-scroll-delay="0.09"
+            data-scroll-speed="4"
+          >
+            r
+          </motion.h1>
+          <motion.h1
+            variants={item}
+            data-scroll
+            data-scroll-delay="0.06"
+            data-scroll-speed="4"
+          >
+            a
+          </motion.h1>
+          <motion.h1
+            variants={item}
+            data-scroll
+            data-scroll-delay="0.04"
+            data-scroll-speed="4"
+          >
+            n
+          </motion.h1>
+          <motion.h1
+            variants={item}
+            data-scroll
+            data-scroll-delay="0.04"
+            data-scroll-speed="4"
+          >
+            g
+          </motion.h1>
+
         </div>
+        <div>
         <motion.h2
           style={{ alignSelf: "flex-end" }}
           variants={item}
@@ -142,8 +202,47 @@ const CoverVideo = () => {
           data-scroll-delay="0.04"
           data-scroll-speed="2"
         >
-          inspire. create. belive
+          Ngày 21 tháng 12 năm 2024
         </motion.h2>
+        </div>
+        <div>
+        <motion.h2
+          style={{ alignSelf: "flex-end" }}
+          variants={item}
+          data-scroll
+          data-scroll-delay="0.04"
+          data-scroll-speed="2"
+        >
+          2024年12月21日（土）
+        </motion.h2>
+        </div>
+        
+        <div>
+        <motion.h2
+          style={{ alignSelf: "flex-end" }}
+          variants={item}
+          data-scroll
+          data-scroll-delay="0.04"
+          data-scroll-speed="2"
+        >
+          <CountdownTimer/>
+        </motion.h2>
+       
+        </div>
+        <div>
+        <motion.h2
+          style={{ alignSelf: "flex-end" }}
+          variants={item}
+          data-scroll
+          data-scroll-delay="0.04"
+          data-scroll-speed="2"
+        >
+          Comming soon ...
+        </motion.h2>
+       
+        </div>
+        
+        
       </Title>
 
       <video src={MainVideo} type="video/mp4" autoPlay muted loop />

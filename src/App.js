@@ -7,12 +7,12 @@ import { ThemeProvider } from "styled-components";
 
 import Loader from "./components/Loader";
 import ScrollTriggerProxy from "./components/ScrollTriggerProxy";
-import About from "./sections/About";
+import Invite from "./sections/Invite";
 import Footer from "./sections/Footer";
 import Home from "./sections/Home";
 import Marquee from "./sections/Marquee";
-import NewArrival from "./sections/NewArrival";
-import Shop from "./sections/Shop";
+import Story from "./sections/Story";
+import Collection from "./sections/Collection";
 import GlobalStyles from "./styles/GlobalStyles";
 import { dark } from "./styles/Themes";
 
@@ -58,10 +58,10 @@ function App() {
               {Loaded ? null : <Loader />}
 
               <Home key="home" />
-              <About key="about" />
-              <Shop key="Shop" />
+              <Invite key="invite" />
+              <Collection key="Collection" />
               <Marquee key="marquee" />
-              <NewArrival key="new arrival" />
+              <Story key="story" />
               <Footer key="Footer" />
             </AnimatePresence>
           </main>
