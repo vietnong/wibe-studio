@@ -40,7 +40,7 @@ const Title = styled.h1`
   text-shadow: 1px 1px 1px ${(props) => props.theme.body};
 
   position: absolute;
-  top: 1rem;
+  top: 2rem;
   left: 5%;
   z-index: 11;
 

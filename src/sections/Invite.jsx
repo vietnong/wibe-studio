@@ -34,10 +34,9 @@ const Left = styled.div`
 
   @media (max-width: 64em) {
     width: 40%;
-        height: 60%;
         position: absolute;
-        top: 60%;
-        left: 75%;
+        top: 10%;
+        left: 54%;
         margin: 0px auto;
         padding: 1rem;
         font-weight: 600;
@@ -47,13 +46,21 @@ const Left = styled.div`
     border-radius: 20px;
   }
   @media (max-width: 48em) {
+    top: 20%;
     font-size: ${(props) => props.theme.fontmd};
   }
   @media (max-width: 30em) {
     font-size: ${(props) => props.theme.fontsm};
     padding: 1rem;
     width: 33%;
-    top: 30%;
+    top: 10%;
+    left: 57%;
+  }
+  @media (max-width: 28em) {
+    font-size: ${(props) => props.theme.fontsm};
+    padding: 1rem;
+    width: 35%;
+    top: 10%;
     left: 57%;
   }
 `;
@@ -152,8 +159,6 @@ const Invite = () => {
         See you there!
       </Title>
       <Left data-scroll data-scroll-sticky data-scroll-target="#fixed-target">
-          Sự hiện diện của bạn là niềm vui của chúng tôi.
-          <br /> <br />
           We are so excited and can't wait to see you. Help us capture our wedding with joy.
           <br /> <br />
           私たちはあなた方の参加を心から歓迎いたします。お会いできることを楽しみにしております。
