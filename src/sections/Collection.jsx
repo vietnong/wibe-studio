@@ -80,7 +80,7 @@ const Left = styled.div`
   }
 
   @media (max-width: 48em) {
-    width: 40%;
+    width: 30%;
     p {
       font-size: ${(props) => props.theme.fontsm};
     }

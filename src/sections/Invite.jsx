@@ -33,16 +33,14 @@ const Left = styled.div`
   margin-top: 20%;
 
   @media (max-width: 64em) {
-    width: 80%;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) !important;
-    margin: 0 auto;
-
-    padding: 2rem;
-    font-weight: 600;
+    width: 40%;
+        height: 60%;
+        position: absolute;
+        top: 60%;
+        left: 75%;
+        margin: 0px auto;
+        padding: 1rem;
+        font-weight: 600;
 
     backdrop-filter: blur(2px);
     background-color: ${(props) => `rgba(${props.theme.textRgba},0.4)`};
@@ -53,8 +51,8 @@ const Left = styled.div`
   }
   @media (max-width: 30em) {
     font-size: ${(props) => props.theme.fontsm};
-    padding: 2rem;
-    width: 70%;
+    padding: 1rem;
+    width: 33%;
   }
 `;
 
@@ -95,15 +93,18 @@ const Right = styled.div`
       width: 30%;
       height: auto;
       left: 5%;
-      bottom: 10%;
+      top: -20%;
+      
+      visibility: hidden;
     }
     .small-img-2 {
       width: 30%;
       height: auto;
-
       position: absolute;
       left: 60%;
-      bottom: 20%;
+      top: 54%;
+
+      visibility: hidden;
     }
   }
 `;
@@ -129,7 +130,7 @@ const Title = styled.h1`
     left: 0%;
   }
   @media (max-width: 48em) {
-    font-size: ${(props) => props.theme.fontxxxl};
+    font-size: 3.7em;
   }
 `;
 
