@@ -53,6 +53,8 @@ const Left = styled.div`
     font-size: ${(props) => props.theme.fontsm};
     padding: 1rem;
     width: 33%;
+    top: 30%;
+    left: 57%;
   }
 `;
 
@@ -131,6 +133,11 @@ const Title = styled.h1`
   }
   @media (max-width: 48em) {
     font-size: 3.7em;
+  }
+  @media (max-width: 30em) {
+    font-size: 3em;
+    top: 10%;
+    left: -5%;
   }
 `;
 
